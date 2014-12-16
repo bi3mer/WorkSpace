@@ -9,7 +9,7 @@ reverseSwqp will reverse the string via swapping
 
 - Colan
 */
-		//printf("%i == %i\n",i,lengthVal-i-1);
+		
 int length (char *string){
 	int count = 0;
 	while(*string++)

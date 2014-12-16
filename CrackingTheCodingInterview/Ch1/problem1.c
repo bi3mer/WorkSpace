@@ -55,7 +55,7 @@ int main(){
 	printf("Data structure method where 1 is true and 0 is false:\n");
 	printf("Good string: %i\n", dataStructureMethod(goodString));
 	printf("Bad string:  %i\n", dataStructureMethod(badString));
-	printf("Without data structure method where 1 is ture and 0 is false:\n");
+	printf("Without data structure method where 1 is true and 0 is false:\n");
 	printf("Good string: %i\n", noDataStructureMethod(goodString));
 	printf("Bad string:  %i\n", noDataStructureMethod(badString));
 }

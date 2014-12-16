@@ -1,8 +1,9 @@
 #include <stdio.h>
 /*
 Find the min and max of an array of integers.
-*/
 
+- Colan
+*/
 
 int min(int array[],int length){
 	int min = array[0];

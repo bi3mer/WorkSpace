@@ -29,7 +29,7 @@ void manipulateString(char *string){ //0(n^2)
 			// place '20' into array
 			string[i+1] = '2';
 			string[i+2] = '0';
-			lengthString = lengthString+2; // moveArray changes length of string by 2
+			lengthString +=2; // moveArray changes length of string by 2
 		}
 	}
 }
@@ -37,7 +37,7 @@ void manipulateString(char *string){ //0(n^2)
 int main(){
 	char string[40] = "blam blammo dam";
 	char stringTwo[40] = "    blammo!  ";
-	
+
 	printf("%s becomes: ",string);
 	manipulateString(string);
 	printf("%s\n",string);

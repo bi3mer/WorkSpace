@@ -1,0 +1,8 @@
+12/23/14
+the function addNewNode isn't necessarily as efficeint as possible because each time we add a new node, we then have to iterate through the entire list, i.e. 0(n) for each add. For the scale of these problems this is okay, but if for example in problem 4 we re-did it, it would be  advisable to in fact manually add them ourselves by maintaining a head and tail for the upper and lower values.
+
+12/22/14
+I'm going to include the implementation of the linked list each time to simplify compilation and general readaibility.
+Also going to start dating stuff.
+
+-Colan

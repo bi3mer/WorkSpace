@@ -1,0 +1,9 @@
+The question asks us how we would implement three stacks into one array. 
+
+The obvious answer in my head is to split the array up so it is n/3 per a stack. The obvious issue is that we have no guarantee that one the array will be large enough and the stackks will be balanced. This is however a solution regardless.
+
+The next solution that came to mind is to just create an array of size three and then place inside of each an entry a stack. Technically it works even though it is a bit cheeky.
+
+Lastly the next solution that comes to mind is a more dynamic solution which is rotating the array elements around to deal with the potential of unbalanced stacks. To mark the end of the stack there will be a NULL element, and it'd probably be wise to store there access point value. 
+
+- Colan

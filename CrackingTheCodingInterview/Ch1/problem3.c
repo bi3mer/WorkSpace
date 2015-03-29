@@ -18,19 +18,19 @@ int length (char *string){
 }
 
 bool checkDictionaries(int dicitonaryA[],int dicitonaryB[]){
-	for(int i = 0; i < 128; i++)
-		if(dicitonaryA[i] != dicitonaryB[i])
+	for(int i = 0; i < 256; i++)
+		if(dicitonaryA[i] != dicitonaryB[i]){
 			return false;
+		}
 	return true;
 }
 
 bool permuationDicitonary(char *a, char*b){
-	// assumption that there are only 128 characters
 	int lengthA = length(a);
 	if(lengthA != length(b)){
 		return false;
 	}
-	int length = 128;
+	int length = 256;
 	int dicitonaryA[length];
 	int dicitonaryB[length];
 	for(int i = 0;i<length;i++){
@@ -45,8 +45,8 @@ bool permuationDicitonary(char *a, char*b){
 }
 
 int main(){
-	char *a = "abc";
-	char *b = "bac";
+	char *a = "The eyes";
+	char *b = "They see";
 	char *c = "dac";
 	/* 
 	a will match b

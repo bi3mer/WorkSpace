@@ -1,0 +1,4 @@
+12/26/14
+Note: the current implementation of the stack doesn't have a check size portion to push which ensures that the bound of the array can't be maxed. The should be fixed in the future.
+
+-Colan

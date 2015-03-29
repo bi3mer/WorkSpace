@@ -4,19 +4,12 @@
 
 /*
 Implement a queue using two stacks.
-
 The solution here will be pretty simple.
-
 give 1
-
 1
-
 give 2
-
 2 1
-
 meaning we pop 1 and place into other stack, push 2, then pop 1 and push 1. etc.
-
 - Colan
 */
 
@@ -99,4 +92,3 @@ Stack * initStack(){
 	stack->size = 0;
 	return stack;
 }
-

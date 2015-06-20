@@ -22,7 +22,7 @@ I may implement the math version in a future version.
 - Colan
 '''
 
-def locker(array,steps,step): 
+def locker(array, steps, step): 
 	## time complexity   0(n^2)
 	## space complexity	 0(n), assuming the tail recursion is well implemented.
 

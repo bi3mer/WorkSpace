@@ -26,8 +26,9 @@ def printMapRegular(newMap):
 
 
 def makeRow():
-	matrix = [[], []]
+	matrix = []
 	appendedOnce = False
+	position = 0
 	for i in range(steps):
 		# Generate matrix
 		string = MatrixString.makeMatrixString(seedType, seedPower)
@@ -44,9 +45,9 @@ def makeRow():
 			appendedOnce = True
 
 		# Append new matrix
-		for i in range(len(newMatrix)):
-			for j in range(len(newMatrix[0])):
-				matrix[i].append(newMatrix[i][j])
+		for j in range(len(newMatrix)):
+			for k in range(len(newMatrix[0])):
+				matrix[j].append(newMatrix[j][k])
 
 	return matrix
 

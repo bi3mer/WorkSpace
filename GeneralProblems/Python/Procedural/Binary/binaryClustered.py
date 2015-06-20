@@ -23,8 +23,6 @@ def printMapRegular(newMap):
 			string += str(cell)
 		print string
 
-
-
 def makeRow():
 	matrix = [[], []]
 	appendedOnce = False

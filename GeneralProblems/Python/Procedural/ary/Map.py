@@ -31,12 +31,23 @@ class Map:
 		for i in range(self.steps - 1):
 			self.addRow()
 
+	def createStartLocation(self, matrix):
+		if matrix[0][0] != self.ground:
+			x = 0
+			y = 0
+			while matrix[y][x] != self.ground:
+				for i in range(2):
+					matrix[y][x] = self.ground
+				y += 1
+
+		return matrix
+
 	def createMapMatrix(self):
 		matrix = []
 		for row in self.map:
 			for blockRow in row.getRowMatrix():
 				matrix.append(blockRow)
-		return matrix
+		return self.createStartLocation(matrix)
 
 	def createMapMatrixAutomata(self):
 		matrix = []
@@ -46,4 +57,4 @@ class Map:
 
 		ca = CellularAutomata(matrix, self.automataSteps, self.ground, self.wall)
 		ca.runAutomata()
-		return ca.getMatrix()
+		return self.createStartLocation(ca.getMatrix())

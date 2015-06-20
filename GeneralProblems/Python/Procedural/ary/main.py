@@ -4,9 +4,9 @@ from Map import Map
 import Print
 
 height = 5
-width = 15
-steps = 5
-automataSteps = 1
+width = 6
+steps = 14
+automataSteps = 20
 
 wall  = 1
 ground = 0

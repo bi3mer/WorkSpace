@@ -4,8 +4,9 @@ from Map import Map
 import Print
 
 height = 5
-width = 10
+width = 15
 steps = 5
+automataSteps = 1
 
 wall  = 1
 ground = 0
@@ -19,9 +20,11 @@ def main():
 	# rf = RowFactory(steps, height, width, wall, ground)
 	# rf.createRow()
 	# Print.big(rf.getRowMatrix())
-	m = Map(steps, height, width, wall, ground)
+	m = Map(steps, height, width, wall, ground, automataSteps)
 	m.createMap()
 	Print.big(m.createMapMatrix())
+	print "\n\n\n\n\n"
+	Print.big(m.createMapMatrixAutomata())
 
 if __name__ == "__main__":
     main()

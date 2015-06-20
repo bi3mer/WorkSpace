@@ -1,15 +1,17 @@
 import random
 import Print
 from RowFactory import RowFactory
+from CellularAutomata import CellularAutomata
 
 class Map: 
-	def __init__(self, steps, height, width, wall, ground):
+	def __init__(self, steps, height, width, wall, ground, automataSteps):
 		self.steps = steps
 		self.height = height
 		self.width = width
 		self.wall = wall
 		self.ground = ground
 		self.map = []
+		self.automataSteps = automataSteps
 
 	def appendRow(self):
 		rf = RowFactory(self.steps, self.height, self.width, self.wall, self.ground)
@@ -35,3 +37,13 @@ class Map:
 			for blockRow in row.getRowMatrix():
 				matrix.append(blockRow)
 		return matrix
+
+	def createMapMatrixAutomata(self):
+		matrix = []
+		for row in self.map:
+			for blockRow in row.getRowMatrix():
+				matrix.append(blockRow)
+
+		ca = CellularAutomata(matrix, self.automataSteps, self.ground, self.wall)
+		ca.runAutomata()
+		return ca.getMatrix()

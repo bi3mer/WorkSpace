@@ -49,7 +49,7 @@ class RowFactory:
 		return self.row
 
 	def getRowMatrix(self):
-		rowMatrix = [[] for y in xrange(self.steps)]
+		rowMatrix = [[] for y in xrange(self.height)]
 		for block in self.row:
 			blockMatrix = block.getBlock()
 			for i in range(len(blockMatrix)):

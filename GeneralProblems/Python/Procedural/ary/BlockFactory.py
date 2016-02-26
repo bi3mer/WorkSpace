@@ -33,8 +33,9 @@ class BlockFactory:
 
 		firstTime = True
 		previousYPosition = 0
+		arr = self.generateMatrixArray()
 		for i in range(self.width):
-			arr = self.generateMatrixArray()
+			
 			self.block[arr[i]][i] = self.ground
 			if firstTime:
 				self.startingYPoint = arr[i]
@@ -44,10 +45,11 @@ class BlockFactory:
 			
 			previousYPosition = arr[i]
 
-		for i in range(self.height):
-			if self.block[i][self.width - 1] == self.ground:
-				self.endingYPoint = i
-				break
+		# for i in range(self.height):
+		# 	if self.block[i][self.width - 1] == self.ground:
+		# 		self.endingYPoint = i
+		# 		break
+		self.endingYPoint = arr[self.width - 1]
 
 	def connectBlockHorizontal(self, oldYPosition):
 		direction = 1

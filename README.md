@@ -8,5 +8,5 @@ Enjoy!
 
 TODO:
 
-	1. I need to add memory deallocation to chapter 2!
-	2. Update this document to be prettier
+1. I need to add memory deallocation to chapter 2!
+2. Update this document to be prettier

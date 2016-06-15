@@ -7,7 +7,7 @@ int main(int argc, char *argv[])
 		printf("Error: You need one argument\n");
 		return 1;
 	}
-;
+
 	int i = 0;
 	for(; argv[1][i] != '\0'; ++i)
 	{

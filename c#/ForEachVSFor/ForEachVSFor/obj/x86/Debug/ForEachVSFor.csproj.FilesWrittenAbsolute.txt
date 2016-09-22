@@ -1,0 +1,5 @@
+/Users/colan/Documents/work/WorkSpace/c#/ForEachVSFor/ForEachVSFor/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/Users/colan/Documents/work/WorkSpace/c#/ForEachVSFor/ForEachVSFor/bin/Debug/ForEachVSFor.exe.mdb
+/Users/colan/Documents/work/WorkSpace/c#/ForEachVSFor/ForEachVSFor/bin/Debug/ForEachVSFor.exe
+/Users/colan/Documents/work/WorkSpace/c#/ForEachVSFor/ForEachVSFor/obj/x86/Debug/ForEachVSFor.exe
+/Users/colan/Documents/work/WorkSpace/c#/ForEachVSFor/ForEachVSFor/obj/x86/Debug/ForEachVSFor.exe.mdb
